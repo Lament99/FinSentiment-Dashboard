@@ -36,3 +36,15 @@ A real-time financial news sentiment dashboard powered by FinBERT, a domain-spec
 ---
 
 ## Project Structure
+finsentiment/
+├── app.py               Main Streamlit application and UI
+├── fetcher.py           NewsAPI integration, fetches articles by ticker
+├── sentiment.py         FinBERT inference, returns label and confidence score
+├── stocks.py            yFinance wrapper, returns daily close prices
+├── database.py          SQLite schema, article and sentiment read/write
+├── correlation.py       Pearson correlation, sentiment vs next-day returns
+├── backtest.py          Sentiment momentum strategy vs buy-and-hold
+├── wordcloud_gen.py     Word cloud from article headlines
+├── requirements.txt     Python dependencies
+├── .env                 API keys, not committed
+└── .gitignore
