@@ -1,23 +1,23 @@
 # FinSentiment
 
-A real-time financial news sentiment dashboard powered by FinBERT, a domain-specific transformer model fine-tuned on financial text. FinSentiment pulls live news articles, runs sentiment inference, and correlates results with stock price movements — giving you a data-driven view of how the market narrative aligns with price action.
+A real-time financial news sentiment dashboard powered by FinBERT, a domain-specific transformer model fine-tuned on financial text. FinSentiment pulls live news articles, runs sentiment inference, and correlates results with stock price movements, giving you a data-driven view of how the market narrative aligns with price action.
 
 ---
 
 ## Features
 
-- **Live News Ingestion** — fetches recent financial news via NewsAPI, filtered by stock ticker
-- **FinBERT Sentiment Analysis** — classifies each article as positive, negative, or neutral using ProsusAI/finbert, a BERT model fine-tuned specifically on financial language
-- **Stock Price Overlay** — pulls live OHLCV data via yFinance and overlays it with daily average sentiment on a dual-axis chart
-- **Sentiment-Price Correlation** — computes Pearson correlation between sentiment momentum and next-day price returns
-- **Backtesting** — simulates a sentiment-driven trading strategy against buy-and-hold, with cumulative return comparison
-- **Sentiment Distribution** — donut chart showing the proportion of positive, negative, and neutral coverage per ticker
-- **Word Cloud** — generated from article headlines, sized by frequency
-- **Article Drill Down** — select any date to see the specific articles that drove that day's sentiment
-- **Multi-Ticker Support** — analyze multiple tickers simultaneously in a single run
-- **Negative Sentiment Alert** — flags tickers with dominant negative sentiment and low confidence scores
-- **CSV Export** — download the full articles and sentiment scores table
-- **Persistent Storage** — SQLite database caches articles and sentiment scores to avoid redundant API and inference calls
+- **Live News Ingestion:** Fetches recent financial news via NewsAPI, filtered by stock ticker
+- **FinBERT Sentiment Analysis:** Classifies each article as positive, negative, or neutral using ProsusAI/finbert, a BERT model fine-tuned specifically on financial language
+- **Stock Price Overlay:** Pulls live OHLCV data via yFinance and overlays it with daily average sentiment on a dual-axis chart
+- **Sentiment-Price Correlation:** Computes Pearson correlation between sentiment momentum and next-day price returns
+- **Backtesting:** Simulates a sentiment-driven trading strategy against buy-and-hold, with cumulative return comparison
+- **Sentiment Distribution:** Donut chart showing the proportion of positive, negative, and neutral coverage per ticker
+- **Word Cloud:** Generated from article headlines, sized by frequency
+- **Article Drill Down:** Select any date to see the specific articles that drove that day's sentiment
+- **Multi-Ticker Support:** Analyze multiple tickers simultaneously in a single run
+- **Negative Sentiment Alert:** Flags tickers with dominant negative sentiment and low confidence scores
+- **CSV Export:** Download the full articles and sentiment scores table
+- **Persistent Storage:** SQLite database caches articles and sentiment scores to avoid redundant API and inference calls
 
 ---
 
