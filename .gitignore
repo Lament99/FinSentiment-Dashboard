@@ -1,0 +1,4 @@
+.env
+finsentiment.db
+finsentiment-env/
+__pycache__/
