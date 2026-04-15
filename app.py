@@ -174,7 +174,7 @@ init_db()
 with st.sidebar:
     st.markdown('<div class="sidebar-title">FinSentiment</div>', unsafe_allow_html=True)
     st.markdown('<div class="sidebar-sub">Market Intelligence</div>', unsafe_allow_html=True)
-    tickers_input = st.text_input("Tickers", placeholder="AAPL, MSFT, TSLA")
+    tickers_input = st.text_input("Tickers", placeholder="Please stick to US tickers")
     analyze = st.button("Run Analysis")
     st.markdown("<br>", unsafe_allow_html=True)
     st.markdown('<p style="color:#1a2030;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;font-family:DM Mono,monospace;">FinBERT · NewsAPI · yFinance</p>', unsafe_allow_html=True)
